@@ -1,0 +1,33 @@
+
+<p Style = "word-break: break-all"><b>{{movieDetail.title}}</b></p>
+<img src="{{movieDetail.poster}}"> 
+<p Style = "word-break: break-all"><b>Plot:</b></p>
+<p>{{movieDetail.plot}}</p>
+<div class="col"  Style="padding: 0">
+
+  		<table class="table table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<th>#</th>
+          <th>Director</th>
+          <th>year</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr >
+					<td style="cursor: pointer;">
+						{{movieDetail.id}}
+					</td>
+          <td >
+						{{movieDetail.director}}
+					</td>
+           <td >
+						{{movieDetail.year}}
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+    <p Style = "word-break: break-all"><b>Actors:</b></p>
+<p Style = "word-break: break-all">{{movieDetail.actors}}</p>
+</div>

@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row" *ngFor="let i of movies" Style="padding: 0">
+		<div class="col">
+			<div class="card" Style="padding: 0" class="box">
+				<div>
+					<a [routerLink]="['/movie', { outlets: { 'right': [i.id] } }]"><img class="img-fluid" src="{{i.poster}}" (click)="onSelectCreate()"></a>
+				</div >
+				<p > {{i.title}}</p>
+			</div>
+
+		</div>
+	</div>
+</div>
